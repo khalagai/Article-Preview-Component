@@ -1,0 +1,224 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Manrope;
+    font-size: 13px;    
+}   
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(210, 46%, 95%);
+    height: 100%;
+}
+.component {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 40%;
+    min-width: 18rem;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+}
+h4 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+
+}
+p {
+    color: hsl(214, 17%, 51%);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+
+}
+.author-details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    height: 4rem;
+    font-size: 0.7rem;
+    grid-row: 4;
+    grid-column: 1;
+}
+.drawer-photo {
+    grid-row: 1;
+    grid-column: 1;
+}
+.message {
+    grid-row: 2;
+    grid-column: 1;
+}
+.para {
+    grid-row: 3;
+    grid-column: 1;
+}
+#author {
+    height: 2.3rem;
+    border-radius: 50%;
+    float: left;
+    padding-right: 0.6rem;
+}
+#drawers {
+    width: 100%;   
+    height: 12rem;
+    border-radius: 1rem 1rem 0 0;
+}
+span {
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+.share {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;    
+}
+.share2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.8rem;
+}
+.icon-share {
+    border: 1px solid hsl(212, 23%, 69%);
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: hsl(210, 46%, 95%); 
+    border-radius: 50%;  
+}
+.icon-share:hover {
+    opacity: 0.6;
+}
+.socials {
+    background-color:  hsl(217, 19%, 35%);
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border-radius: 0 0 1rem 1rem;
+    color: hsl(214, 17%, 51%);
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    height: 4rem;
+    grid-row: 4;
+    grid-column: 1;
+}
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.6rem;
+}
+#facebook {
+    height: 1rem;
+    cursor: pointer;
+}
+#facebook:hover {
+    opacity: 0.7;
+}
+#twitter {   
+    height: 1rem;
+    cursor: pointer;
+}
+#twitter:hover {
+    opacity: 0.7;
+}
+#pinterest {   
+    height: 1rem;
+    cursor: pointer;
+}
+#pinterest:hover {
+    opacity: 0.7;
+}
+#show0 {display: flex;}
+#show1 {display: none;}
+@media (min-width: 600px) {
+
+    .author-details {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .component {
+        width: 70%;
+        max-width: 43.75rem;
+        height: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: auto;
+        font-size: clamp(12px, 1.5vw, 16px);
+     }
+     .drawer-photo {
+        grid-column: 1;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .message {
+        grid-column: 2;
+        grid-row: 1;
+        padding-top: 1rem;
+    }
+    .para {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    #drawers {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+    }
+    .socials {
+        position: relative;
+        grid-row: 3;
+        grid-column: 2;
+        bottom: 50%;
+        right: -60%;
+        width: 14rem;
+        height: 2.5rem;
+        border-radius: 1rem;
+    }
+    .share2 {
+        position: relative;
+        bottom: -125%;
+        right: 65%;
+    }
+    .pointer {
+        bottom: 15%;
+        right: -75%;
+        height: 1rem;
+        width: 1.2rem;
+        background-color:  hsl(217, 19%, 35%);
+        grid-column: 2;
+        grid-row: 3;
+        transform: rotate(45deg);
+        display: none;
+        position: relative;
+    }
+    .share {
+        margin-right: 1.3rem;        
+    }
+    #drawers {
+        min-width: 10.625rem;
+    }
+    .icons {
+        gap: 1.4rem;
+    }
+
+    }
+
